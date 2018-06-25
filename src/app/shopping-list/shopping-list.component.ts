@@ -26,5 +26,7 @@ private subscription: Subscription;
     this.subscription.unsubscribe();
   }
 
-
+  onEditItem(index: number) {
+     this.shoppingListService.startedEditing.next(index);
+  }
 }
